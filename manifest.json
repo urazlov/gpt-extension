@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Extension",
+  "version": "1.0",
+  "description": "A Chrome extension with a small modal window for ChatGPT interaction.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "./icons/icon_16x16.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ]
+}
