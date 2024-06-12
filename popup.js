@@ -21,7 +21,7 @@ async function sendMessage() {
       body: JSON.stringify({
         model: 'gpt-3.5-turbo',
         messages: [{ role: "user", content: userInput }],
-        max_tokens: 300
+        max_tokens: 500
       })
     });
 

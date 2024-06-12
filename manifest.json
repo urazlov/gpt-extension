@@ -1,17 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Extension",
+  "name": "ChatGPT Dialog",
   "version": "1.0",
-  "description": "A Chrome extension with a small modal window for ChatGPT interaction.",
+  "description": "A ChatGPT extension that opens as a sidebar.",
+  "permissions": [
+    "sidePanel"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
       "16": "./icons/icon_16x16.png"
     }
-  },
-  "permissions": [
-    "storage",
-    "activeTab",
-    "scripting"
-  ]
+  }
 }
